@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathan</title>
+  <style>
+    body { margin: 0; background: #fff; }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      animation: fadeUp 1s ease-out forwards;
+    }
+    .fade-up-delay-1 { animation-delay: 0.2s; }
+    .fade-up-delay-2 { animation-delay: 0.5s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div style="text-align: center;">
+      <h1 class="fade-up" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: clamp(3rem, 6vw, 4rem); font-weight: 700; color: #000; margin: 0;">
+        Hey, it's Nathan.
+      </h1>
+      <p class="fade-up fade-up-delay-1" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 400; color: #444; margin: 1.5rem 0 0 0; text-transform: uppercase; letter-spacing: 0.15em;">
+        tech things &amp; NYC co-ops
+      </p>
+      <div class="fade-up fade-up-delay-2" style="display: flex; align-items: center; justify-content: center; gap: 3.5rem; margin-top: 1.5rem;">
+        <a href="https://www.linkedin.com/in/nathanjlichtenstein"><img src="linkedin.png" alt="LinkedIn" style="height: 72px;" /></a>
+        <a href="https://www.fivetran.com"><img src="fivetran.png" alt="Fivetran" style="height: 72px;" /></a>
+        <a href="https://www.cnyc.com"><img src="cnyc-logo.png" alt="CNYC" style="height: 72px;" /></a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
